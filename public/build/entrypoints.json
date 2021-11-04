@@ -1,0 +1,50 @@
+{
+  "entrypoints": {
+    "app": {
+      "js": [
+        "/build/runtime.js",
+        "/build/vendors-node_modules_jquery_dist_jquery_js.js",
+        "/build/vendors-node_modules_bootstrap_dist_js_bootstrap_esm_js.js",
+        "/build/app.js"
+      ],
+      "css": [
+        "/build/app.css"
+      ]
+    },
+    "form": {
+      "js": [
+        "/build/runtime.js",
+        "/build/vendors-node_modules_jquery_dist_jquery_js.js",
+        "/build/vendors-node_modules_core-js_modules_es_array_find_js-node_modules_core-js_modules_es_object_-823ffa.js",
+        "/build/vendors-node_modules_core-js_internals_array-slice_js-node_modules_core-js_modules_es_functio-0d77f2.js",
+        "/build/form.js"
+      ]
+    },
+    "login": {
+      "js": [
+        "/build/runtime.js",
+        "/build/vendors-node_modules_jquery_dist_jquery_js.js",
+        "/build/vendors-node_modules_core-js_modules_es_array_find_js-node_modules_core-js_modules_es_object_-823ffa.js",
+        "/build/login.js"
+      ]
+    },
+    "table": {
+      "js": [
+        "/build/runtime.js",
+        "/build/vendors-node_modules_jquery_dist_jquery_js.js",
+        "/build/vendors-node_modules_core-js_modules_es_array_find_js-node_modules_core-js_modules_es_object_-823ffa.js",
+        "/build/vendors-node_modules_core-js_internals_array-slice_js-node_modules_core-js_modules_es_functio-0d77f2.js",
+        "/build/vendors-node_modules_bootstrap-table_dist_bootstrap-table_min_js-node_modules_core-js_modules-0a5b5e.js",
+        "/build/table.js"
+      ]
+    },
+    "login-styles": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/login-styles.css"
+      ]
+    }
+  }
+}

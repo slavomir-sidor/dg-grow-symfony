@@ -1,0 +1,35 @@
+index:
+    path: /
+    controller: App\Controller\DefaultController::index
+    defaults:
+        title: "Welcome"
+
+
+app_authentication_login:
+    path: /login
+    controller: App\Controller\AuthenticationController::login
+    defaults:
+        title: "Login"
+
+
+app_authentication_logout:
+    path: /logout
+    controller: App\Controller\AuthenticationController::logout
+    defaults:
+        title: "Logout"
+
+app_product_new:
+    path: /products/new
+    controller: App\Controller\ProductController::new
+    defaults:
+        title: "New Product"
+
+app_product_sales:
+    path: /products/sales
+    controller: App\Controller\ProductController::sales
+    defaults:
+        title: "Product Sales"
+
+api_authentication_token:
+    path: /token
+    methods: ['POST']

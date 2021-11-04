@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+	<div class="container-fluid">
+
+		<a class="navbar-brand" href="{{ path('index')}}">Boostrap</a>
+
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+				<li class="nav-item"><a class="nav-link active" href="{{ path('index')}}">Welcome</a></li>
+				<li class="nav-item"><a class="nav-link active" href="{{ path('app_product_new')}}">New product</a></li>
+				<li class="nav-item"><a class="nav-link active" href="{{ path('app_product_sales')}}">Sales</a></li>
+
+			</ul>
+
+			<label class="d-flex">Logged as {{ app.user.username }} [{{ app.user.fullname }} &lt;{{ app.user.email }}&gt;].</label>
+			<a class="d-flex nav-link logout" href="{{path('app_authentication_logout')}}">Logout</a>
+
+		</div>
+
+	</div>
+
+</nav>
+
+<nav aria-label="breadcrumb">
+	<div class="container-fluid">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="{{ path('index')}}">Home</a></li>
+			<li class="breadcrumb-item active" aria-current="page">{{app.request.attributes.get('_route_params')['title']}}</li>
+		</ol>
+	</div>
+</nav>

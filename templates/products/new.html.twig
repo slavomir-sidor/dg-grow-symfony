@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+{% block javascripts %}
+	{{ parent() }}
+	{{ encore_entry_script_tags('form') }}
+{% endblock %}
+
+{% block body %}
+<div class="invalid-feedback">Unexpected server error.</div>
+<div class="alert alert-success" style="display:none;" role="alert">
+  Product was saved
+</div>
+{{ form(form) }}
+{% endblock %}

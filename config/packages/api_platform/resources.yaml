@@ -1,0 +1,18 @@
+App\Entity\Product:
+    itemOperations: {}
+    collectionOperations:
+        post:
+           normalization_context:
+              iri: ""
+           denormalization_context: 
+              datetime_format: "Y-m-d"
+
+App\Entity\Sales:
+    itemOperations: {}
+    collectionOperations:
+       get:
+           method: GET
+           path: /sales
+           controller: App\Controller\API\SalesController
+           normalization_context:
+              iri: ""

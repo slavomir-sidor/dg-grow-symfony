@@ -1,0 +1,14 @@
+{
+  "build/app.css": "/build/app.css",
+  "build/app.js": "/build/app.js",
+  "build/form.js": "/build/form.js",
+  "build/login.js": "/build/login.js",
+  "build/table.js": "/build/table.js",
+  "build/login-styles.css": "/build/login-styles.css",
+  "build/runtime.js": "/build/runtime.js",
+  "build/vendors-node_modules_jquery_dist_jquery_js.js": "/build/vendors-node_modules_jquery_dist_jquery_js.js",
+  "build/vendors-node_modules_core-js_modules_es_array_find_js-node_modules_core-js_modules_es_object_-823ffa.js": "/build/vendors-node_modules_core-js_modules_es_array_find_js-node_modules_core-js_modules_es_object_-823ffa.js",
+  "build/vendors-node_modules_core-js_internals_array-slice_js-node_modules_core-js_modules_es_functio-0d77f2.js": "/build/vendors-node_modules_core-js_internals_array-slice_js-node_modules_core-js_modules_es_functio-0d77f2.js",
+  "build/vendors-node_modules_bootstrap_dist_js_bootstrap_esm_js.js": "/build/vendors-node_modules_bootstrap_dist_js_bootstrap_esm_js.js",
+  "build/vendors-node_modules_bootstrap-table_dist_bootstrap-table_min_js-node_modules_core-js_modules-0a5b5e.js": "/build/vendors-node_modules_bootstrap-table_dist_bootstrap-table_min_js-node_modules_core-js_modules-0a5b5e.js"
+}

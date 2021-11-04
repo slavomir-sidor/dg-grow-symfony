@@ -1,0 +1,20 @@
+{% macro table(table) %}
+<table>
+	<thead>
+		<tr>
+			{% for column in table["column"] %}
+			<th>{{column["header"]}}</th>
+			{% endfor %}
+		</tr>
+	</thead>
+	<tbody>
+		{% for data in table["data"] %}
+		<tr>
+			{% for column in table["column"] %}
+			<td>column</td>
+			{% endfor %}
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+{% endmacro %}

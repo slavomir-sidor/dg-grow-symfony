@@ -1,0 +1,170 @@
+{% extends 'base.html.twig' %} {% block body %}
+
+	<h1>SYMFONY BACK-END DEVELOPER TEST</h1>
+	<h2>Pre-requisites and conditions:</h2>
+	<ul>
+		<li>Use Symfony 4.0+</li>
+		<li>Use the provided JSON file for data source (potato_sales.json)</li>
+		<li>Use HTML 5</li>
+		<li>Use UTF-8 character encoding</li>
+		<li>You may use Bootstrap 4.0 (https://getbootstrap.com/) or other UI components libraries</li>
+		<li>You may use API Platform (https://api-platform.com/)</li>
+		<li>The application can be either Single or Multiple Page Application</li>
+		<li>Source code can be developed locally and pushed to a GIT repository (e.g.: GitHub)</li>
+		<li>Access to all project commits should be granted</li>
+		<li>If the repository is not public, a username and password must be provided</li>
+	</ul>
+
+	<h2>Application Requirements:</h2>
+	<ol>
+		<li>The application should be self-contained, without requiring access to external resources. If libraries are
+			used, please include them locally.</li>
+		<li>The only external data provider allowed is the provided JSON file.</li>
+		<li>Access to data must be implemented through a REST API defined in Symfony. If preferred, API Platform can be
+			also used, but not required.</li>
+		<li>The application must have a login page with a mock validation where
+			<ol>
+				<li>It returns an error if the username and password are not valid</li>
+				<li>It directs the user to “welcome” page if login is successful. Additionally it should create a session
+					storing the username, the full name and the email address. This information can be hardcoded.</li>
+			</ol>
+		</li>
+		<li>The Welcome page must contain links to the following pages:
+			<ol>
+				<li>New Product</li>
+				<li>Sales</li>
+			</ol> The pages templates are to be implemented with TWIG and, in every page, there should be a header displaying the
+			following items:
+			<ul>
+				<li>Page name</li>
+				<li>User’s full name</li>
+				<li>Logout option</li>
+			</ul>
+		</li>
+		<li>
+			<p>The “New Product” page must have a form with the following information:</p>
+			<table border="1">
+				<tr>
+					<td>
+						Form field
+					</td>
+					<td>
+						Type
+					</td>
+					<td>
+						Dimension
+					</td>
+					<td>
+						Is required
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Product name
+					</td>
+					<td>
+						String
+					</td>
+					<td>
+						50
+					</td>
+					<td>
+						Yes
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Product ID
+					</td>
+					<td>
+						Integer
+					</td>
+					<td>
+						13
+					</td>
+					<td>
+						Yes
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Product manager
+					</td>
+					<td>
+						String
+					</td>
+					<td>
+						30
+					</td>
+					<td>
+						No
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Sales start date
+					</td>
+					<td>
+						Date
+					</td>
+					<td>
+						10
+					</td>
+					<td>
+						Yes
+					</td>
+				</tr>
+			</table>
+			<p>The form should validate for correct content and mandatory fields.</p>
+			<p>Submit and clear buttons must be available.</p>
+			<p>Once validated, the form must POST information to an API endpoint. The endpoint must exist but no processing
+				of the received information is required, other than an acknowledgment of reception that must be visible in the
+				front-end as feedback to the “submit” action.</p>
+		</li>
+		<li>
+			<p>The “Sales” page should display a data grid with the following header:</p>
+			<table border="1">
+				<tr>
+					<td rowspan="2">
+						Product ID
+					</td>
+					<td rowspan="2">
+						Product Name
+					</td>
+					<td colspan="4">
+						Sales
+					</td>
+					<td rowspan="2">
+						Total sales
+					</td>
+				</tr>
+				<tr>
+					<td>
+						2019Q1
+					</td>
+					<td>
+						2019Q2
+					</td>
+					<td>
+						2019Q3
+					</td>
+					<td>
+						2019Q4
+					</td>
+				</tr>
+			</table>
+			<ol>
+				<li>Information to populate the grid is provided in the JSON file (through an API call).</li>
+				<li>Column names should not be hardcoded in the template but retrieved from the provided JSON file (through an
+					API call).</li>
+				<li>Total sales value is calculated from the information retrieved via the API call.</li>
+				<li>The data should be sortable per column, either client or server-side.</li>
+			</ol>
+		</li>
+		<li>A logout page should be put in place, with the possibility to login again. The user must not be able to go
+			back into the site without authenticating again.</span>
+		</li>
+	</ol>
+
+	<p>END.</p>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'unauthorized.html.twig' %}
+
+{% block javascripts %}
+	{{ parent() }}
+	{{ encore_entry_script_tags('login') }}
+{% endblock %}
+{% block stylesheets %} {{ parent() }} {{ encore_entry_link_tags('login-styles') }} {%
+endblock %}
+
+{% block body %}
+<main class="form-login">
+	<h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+	<form action="{{ path('app_authentication_login') }}" method="post" data-redirect="{{ path('index') }}">
+
+		<div class="mb-3">
+			<label for="username"  class="form-label required">Username:</label>
+			<input type="text" id="username" name="username" value="{{ last_username }}" required="required" class="form-control"/>
+		</div>
+
+		<div class="mb-3">
+			<label for="password" class="form-label required">Password:</label>
+			<input type="password" id="password" name="password" required="required" class="form-control"/>
+		</div>
+
+
+		<div class="mb-3">
+			<button type="submit" class="btn-primary btn">Login</button>
+		</div>
+
+		<div class="invalid-feedback"></div>
+
+	</form>
+
+	<div class="alert alert-secondary" role="alert">
+	Default username/password are admin/Passw0rd.
+	</div>
+
+	<div class="alert alert-light" role="alert">
+		API Platform <a href="{{path('api_doc')}}">swagger docs</a>.
+	</div>
+</main>
+{% endblock %}
